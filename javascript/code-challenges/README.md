@@ -25,3 +25,9 @@ You can see the results of your tests online in the "Actions" tab of your reposi
 ## Assignment Submission
 
 When you finish the assignment each day, make a new pull request from your daily challenge branch to your master branch and submit the PR URL in Canvas. You can submit a link to a pull request even if the pull request is closed.
+
+
+### Challenge 03 References 
+[filter numbers](https://www.encodedna.com/javascript/filter-out-only-numbers-in-an-array-using-javascript.htm) <br>
+
+I was struggling with Challenge 3 and I found examples using regular expressions to parse out letters from a string, so that's what I used: [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) <br>
