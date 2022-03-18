@@ -118,6 +118,7 @@ const returnNames = (arr) => {
   // Solution code here...
   return arr.reduce((names, current) => {
     names.push(current.name);
+    return names;
   }, []);
 };
 
@@ -143,7 +144,7 @@ const reversedString = (str) => {
 CHALLENGE 7 - Stretch Goal
 
 Write a function named countNumberOfChildren that, given the array of characters, below, uses reduce to return the total number of children in the data set.
------------------------------------------------------------------------------------------------- */
+------------------------------------------------------------------------------------------------ 
 
 const characters = [
   {
@@ -198,7 +199,7 @@ CHALLENGE 8 - Stretch Goal
 Write a function that, given an array of numbers as input, uses reduce to calculate the array's average value.
 
 Hint: The accumulator should begin as { count: 0, sum: 0 }
------------------------------------------------------------------------------------------------- */
+------------------------------------------------------------------------------------------------ 
 
 const calculateAverage = (arr) => {
   // Solution code here...
@@ -210,7 +211,7 @@ CHALLENGE 9 - Stretch Goal
 Write a function named countPrimeNumbers that, given an array elements as input, uses reduce to count the number of elements that are prime numbers.
 
 You are welcome to use the provided isPrime function.
------------------------------------------------------------------------------------------------- */
+------------------------------------------------------------------------------------------------ 
 
 const isPrime = (value) => {
   for (let i = 2; i < value; i++) {
@@ -231,7 +232,7 @@ CHALLENGE 10 - Stretch Goal
 Write a function named extractState that, given the snorlaxData, below, uses reduce to return the object whose 'name' property matches the given string.
 
 If the input array does not have a stat with that specific name, the function should return null.
------------------------------------------------------------------------------------------------- */
+------------------------------------------------------------------------------------------------ 
 
 const snorlaxData = {
   stats: [
@@ -276,7 +277,7 @@ Write a function named extractChildren that, given the array of characters from 
 1) Uses filter to return an array of the characters that contain the letter 'a' in their name
 
 2) Then, uses reduce to return an array of all the children's names in the filtered array
------------------------------------------------------------------------------------------------- */
+------------------------------------------------------------------------------------------------ 
 
 const extractChildren = (arr) => {
   // Solution code here...
