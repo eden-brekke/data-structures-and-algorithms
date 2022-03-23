@@ -54,7 +54,8 @@ let characters = [
 
 const sortByChildren = (charArray) => {
   // Solution code here...
-  return charArray.sort((a, b) => a.house.localeCompare(b.house), {}).sort((a, b) => a.children.length - b.children.length, {});
+  let regex = charArray.sort((a, b) => a.house.localeCompare(b.house), {}).sort((a, b) => a.children.length - b.children.length, {});
+  return regex;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -66,7 +67,8 @@ Write a function named containsW that takes in a string. This function should us
 
 const containsW = (str) => {
   // Solution code here...
-  return str.match(/w/g) ? true : false;
+  let regex = str.match(/w/g) ? true : false;
+  return regex;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -97,7 +99,8 @@ Write a function named containsWorld that takes in a string or number of any len
 
 const containsWorld = (input) => {
   // Solution code here...
-  return input.toString().match(/\b(world)\b/g) ? true : false;
+  let regex = input.toString().match(/\b(world)\b/g) ? true : false;
+  return regex;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -148,7 +151,8 @@ Do not use the vertical bar (pipe) in your pattern.
 
 const matchMonth = (input) => {
   // Solution code here...
-  return input.toString().match(/^[Oo]ct(ober)?$/g) ? true: false;
+  let regex = input.toString().match(/^[Oo]ct(ober)?$/g) ? true: false;
+  return regex;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -163,7 +167,8 @@ The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "
 
 const noPunctuation = str => {
   // Solution code here...
-  return str.match(/\w+\s/g);
+  let regex = str.match(/\w+\s/g);
+  return regex;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -180,7 +185,8 @@ For example, 'Welcome to Code 301!' will return 'W_lc_m_ t_ C_d_ 301!'.
 
 let hangman = (str) => {
   // Solution code here...
-  return str.replace(/[aeiou]/gi, '_');
+  let regex = str.replace(/[aeiou]/gi, '_');
+  return regex;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -197,7 +203,8 @@ const seashells = 'She sells seashells by the seashore. The shells she sells are
 
 const findShells = (str) => {
   // Solution code here...
-  return str.match(/s(eas)?h?(ells)/g);
+  let regex = str.match(/s(eas)?h?(ells)/g);
+  return regex;
 };
 
 /* ------------------------------------------------------------------------------------------------
